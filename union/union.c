@@ -6,7 +6,7 @@
 /*   By: jherrald <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/07 20:58:02 by jherrald          #+#    #+#             */
-/*   Updated: 2020/03/07 22:24:25 by jherrald         ###   ########.fr       */
+/*   Updated: 2020/03/07 22:25:15 by jherrald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,10 @@ int 	main(int ac, char **av)
 		y = 0;
 		while (av[x][y])
 		{
-			if (tab[(unsigned char)av[x][y]] == 0)
+			if (tab[av[x][y]] == 0)
 			{
 				write(1, &av[x][y], 1);
-				tab[(unsigned char)av[x][y]] = 1;
+				tab[av[x][y]] = 1;
 			}
 			y++;
 		}
